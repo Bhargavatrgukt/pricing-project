@@ -123,6 +123,10 @@ strong{
    background-color: white;
 }
 
+.card2{
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   transform: scale(1.1);
+}
 .card1:hover {
    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
    transform: scale(1.1);
