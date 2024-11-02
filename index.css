@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        background-color: hsl(240, 78%, 98%);
+}
+
+.top-image{
+    position: fixed;
+    right: 0;
+    top:0;
+    width:375px;
+    height:658px;
+    z-index: -1;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: -1;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+  margin-top: 5%;
+}
+
+.space{
+   height: 50px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0 10px; 
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider styling */
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(237, 63%, 64%); /* Default background color */
+    cursor: pointer;
+    transition: background-color 0.4s; /* Smooth background color transition */
+}
+
+/* Positioning and styling of the sliding element (toggle circle) */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    transition: transform 0.4s; /* Smooth transition for sliding effect */
+}
+
+/* Rounded slider style */
+.slider.round {
+    border-radius: 30px; /* Rounded edges for slider */
+}
+
+.slider.round:before {
+    border-radius: 50%; /* Circular sliding element */
+}
+
+/* Active (checked) state */
+.switch input:checked + .slider {
+    background-color: hsl(234, 78%, 62%); /* New color when toggle is active */
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(26px); /* Move toggle to the right when checked */
+}
+
+
+
+
+.cards{
+    margin:50px;
+     display:flex;
+    justify-content:center;
+}
+strong{
+    color: hsl(232, 13%, 33%);
+}
+
+.card1{ 
+   margin: 5px; 
+   width:25vw;
+   height:55vh; 
+   border: none;
+   border-radius:10px;
+   padding:20px;
+   box-shadow: 2px 2px 2px hsl(233, 13%, 49%);
+   background-color: white;
+}
+
+.card1:hover {
+   background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+   transform: scale(1.1);
+}
+
+.card1:hover p{
+   color:white;
+}
+
+.card1:hover button{
+   background: white;
+   color: hsl(237, 63%, 64%);
+}
+
+
+
+.price {
+    font-size: clamp(20px, 5vw, 50px); /* Adjusts between 20px and 50px based on viewport */
+ }
+
+.card_text{
+   color:hsl(233, 13%, 49%);
+}
+
+.card1 button{
+   font-family: "Montserrat", sans-serif;
+   width:80%;
+   height: 10%;
+   font-weight:700;
+   background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+   color:white;
+   border-radius:5px;
+   border:none;
+}
+
+
+
+
+@media( max-width:430px){
+    .cards{
+         margin:50px;
+         display:flex;
+         flex-direction: column;
+
+    }
+
+    .card1{ 
+        width:80vw;
+        height:425px; 
+        border: none;
+        margin: 6px;
+        border-radius:10px;
+        padding:20px;
+        box-shadow: 2px 2px 2px hsl(233, 13%, 49%);
+        background-color: white;
+     }
+     
+     .top-image{
+        position: fixed;
+        right: 0;
+        top:0;
+        z-index: -1;
+        width:200px;
+       height:200px;
+    }
+    
+    .bottom{
+        position: fixed;
+        bottom: 0;
+        left:0;
+        display: none;
+        max-width: 120px;
+    }
+    .price{
+        font-size:25px;
+     }
+
+     
+}
