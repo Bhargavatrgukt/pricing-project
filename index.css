@@ -35,12 +35,28 @@ body{
 
 .heading{
   margin-top: 5%;
+  color: hsl(233, 13%, 49%);
 }
 
 .space{
    height: 50px;
 }
 
+.toggling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Annually{
+    color:hsl(234, 14%, 74%);
+    margin-right:4px;
+}
+
+.Monthly{
+    color:hsl(234, 14%, 74%);
+    margin-left:4px ;
+}
 
 .switch {
     position: relative;
