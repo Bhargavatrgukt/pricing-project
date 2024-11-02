@@ -12,13 +12,16 @@ body{
         background-color: hsl(240, 78%, 98%);
 }
 
-.top-image{
-    position: fixed;
-    right: 0;
-    top:0;
-    width:375px;
-    height:658px;
-    z-index: -1;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/bg-top.svg),url(images/bg-bottom.svg);
+    background-position: top right,bottom left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width:100vw;
 }
 
 .bottom{
@@ -28,11 +31,7 @@ body{
     z-index: -1;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .heading{
   margin-top: 5%;
@@ -123,23 +122,24 @@ strong{
    background-color: white;
 }
 
-.card2{
+/*.card2{
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
    transform: scale(1.1);
-}
-/* .card1:hover { 
+}*/
+
+.card1:hover { 
    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
    transform: scale(1.1);
-}*/
+}
 
-/* .card1:hover p{ 
+.card1:hover p{ 
    color:white;
-}*/
+}
 
-/* .card1:hover button{ 
+.card1:hover button{ 
    background: white;
    color: hsl(237, 63%, 64%);
-}*/
+}
 
 
 

@@ -1,0 +1,14 @@
+### changes have to made afet review
+
+image to background-image 
+
+class naming conventions 
+
+instead of <p> tags we can use <li>
+
+some color changes for better ui
+
+box-model and box-sizing
+ 
+
+ 
