@@ -129,13 +129,14 @@ strong{
 
 .card1{ 
    margin: 5px; 
-   width:25vw;
+   width:20vw;
    height:55vh; 
    border: none;
    border-radius:10px;
    padding:20px;
    box-shadow: 2px 2px 2px hsl(233, 13%, 49%);
    background-color: white;
+   text-align: center;
 }
 
 /*.card2{
@@ -148,6 +149,7 @@ strong{
    transform: scale(1.1);
 }
 
+
 .card1:hover p{ 
    color:white;
 }
@@ -157,14 +159,39 @@ strong{
    color: hsl(237, 63%, 64%);
 }
 
+.card1:hover .dollar{
+  color:white;
+}
+
+.card1:hover .card-text{
+    color:white;
+}
 
 
 .price {
-    font-size: clamp(20px, 5vw, 50px); /* Adjusts between 20px and 50px based on viewport */
+    font-size: clamp(20px, 5vw, 40px); 
+    display: inline;
+    font-weight: 700;
+ }
+ 
+ .dollar{
+    font-size: clamp(20px, 5vw, 40px); 
+    font-weight:700;
  }
 
-.card_text{
+ hr{
+    margin:25px;
+    opacity:0.5;
+ }
+
+.card-text{
    color:hsl(233, 13%, 49%);
+   margin:9px;
+   margin-bottom:20px;
+}
+
+.descriptor{
+    list-style-type:none;
 }
 
 .card1 button{
@@ -221,4 +248,21 @@ strong{
      }
 
      
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .dollar,
+    .price {
+        font-size: clamp(24px, 5vw, 40px);
+    }
 }
